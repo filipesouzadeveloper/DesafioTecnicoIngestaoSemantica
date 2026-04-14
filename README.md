@@ -21,7 +21,7 @@ Projeto de RAG (Retrieval-Augmented Generation) desenvolvido como entregável do
 ```
 ├── docker-compose.yml
 ├── requirements.txt
-├── .env.example
+├── .env
 ├── .gitignore
 ├── src/
 │   ├── ingest.py    # Ingestão do PDF no banco vetorial
@@ -62,13 +62,7 @@ Coloque o arquivo PDF que deseja ingerir na raiz do projeto com o nome `document
 
 ### 4. Configure as variáveis de ambiente
 
-Copie o arquivo de exemplo e preencha com suas credenciais:
-
-```bash
-cp .env.example .env
-```
-
-Edite o `.env`:
+Edite o arquivo `.env` com suas credenciais:
 
 ```env
 GOOGLE_API_KEY=AIza...          # Sua chave do Google AI Studio
